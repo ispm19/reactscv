@@ -5,7 +5,7 @@ import myImage from './me.jpeg';
 const Banner = () => {
   return (
     
-    <div className='container container-sm px-10 max-w-6xl mx-auto'>
+    <div className='container container-sm px-10 max-w-6xl mx-auto mt-16'>
         <div className='columns-2 p-10'>
             <div className='columns1 flex'>
             <article className="font-mono text-wrap text-center">
