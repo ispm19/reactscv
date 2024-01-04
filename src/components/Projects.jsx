@@ -1,53 +1,102 @@
 import React from 'react'
+import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
+import calpng from "./calpng.png";
+import citasweb from "./citaspng.png"
+import pythonpng from "./led.png"
+import cv1 from "./cv1.png"
+import './Projects.css';
+import {Tooltip} from "@nextui-org/react";
+ const proje = [{
+    name : "Simple Calculator",
+    tecnologias: "JavaScript Vanilla",
+ },{
+    name : "Web for Clinic / Appointments",
+    tecnologias: "JavaScript Vanilla",
+ },{
+    name : "Python PDF Convert to mp3",
+    tecnologias: "Python",
+ },{
+    name : "Mi CV",
+    tecnologias: "Reactjs",
+ }
+]
 
 const Projects = () => {
   return (
-    <div className='container container-sm px-10 max-w-6xl mx-auto'>
-      <div>
-        <h3 class="text-3xl font-bold text-center font-mono">My Projects</h3>
-      </div>
-      <div>
-      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-    <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-  </a>
-  <div className="p-5">
-    <a href="#">
-      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-    </a>
-    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-      Here are the biggest enterprise technology acquisitions of 2021 so far, in
-      reverse chronological order.
-    </p>
-    <a
-      href="#"
-      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-    >
-      Read more
-      <svg
-        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 14 10"
-      >
-        <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M1 5h12m0 0L9 1m4 4L9 9"
-        />
-      </svg>
-    </a>
-  </div>
-</div>
-
-      </div>
-    </div>
-  )
+        <div>
+        <h2 className="text-5xl font-bold text-center font-mono mb-10">My Personal Projects</h2>
+            <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 container container-sm px-10 max-w-6xl mx-auto mt-auto gap-10'>
+                <Tooltip content="Click to open web page" delay={0}
+      closeDelay={0}>
+                <Card className="py-4" isHoverable isPressable>
+                <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+                    <p className="text-tiny uppercase font-bold">JavaScript Vanilla</p>
+                    <small className="text-default-500">12 Tracks</small>
+                    <h4 className="font-bold text-large">Simple Calculator</h4>
+                </CardHeader>
+                <CardBody className="overflow-visible py-2 items-center">
+                    <Image isZoomed
+                    alt="Card background"
+                    className="object-cover rounded-xl"
+                    src={calpng}
+                    width={270}
+                    />
+                </CardBody>
+                </Card>
+                </Tooltip>
+                
+                <Card className="py-4" isHoverable isPressable>
+                <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+                    <p className="text-tiny uppercase font-bold">JavaScript Vanilla</p>
+                    <small className="text-default-500">12 Tracks</small>
+                    <h4 className="font-bold text-large">Web for Clinic / Appointments</h4>
+                </CardHeader>
+                <CardBody className="overflow-visible py-2 items-center">
+                    <Image
+                    isZoomed
+                    alt="Card background"
+                    className="object-cover rounded-xl"
+                    src={citasweb}
+                    width={270}
+                    />
+                </CardBody>
+                </Card>
+                <Card className="py-4" isHoverable isPressable>
+                <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+                    <p className="text-tiny uppercase font-bold">Python</p>
+                    <small className="text-default-500">12 Tracks</small>
+                    <h4 className="font-bold text-large">Python PDF Convert to mp3</h4>
+                </CardHeader>
+                <CardBody className="overflow-visible py-2 items-center">
+                    <Image
+                    isZoomed
+                    alt="Card background"
+                    className="object-cover rounded-xl"
+                    src={pythonpng}
+                    width={270}
+                    />
+                </CardBody>
+                </Card>
+                <Card className="py-4" isHoverable isPressable>
+                <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+                    <p className="text-tiny uppercase font-bold">Reactjs</p>
+                    <small className="text-default-500">12 Tracks</small>
+                    <h4 className="font-bold text-large">Mi CV</h4>
+                </CardHeader>
+                <CardBody className="overflow-visible py-2 items-center">
+                    <Image
+                    isZoomed
+                    alt="Card background"
+                    className="object-cover rounded-xl"
+                    src={cv1}
+                    width={270}
+                    />
+                </CardBody>
+                </Card>
+            </div>
+        </div>
+        
+    )
 }
 
 export default Projects

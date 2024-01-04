@@ -1,33 +1,44 @@
 import React from 'react'
 import myImage from './me.jpeg';
-
+import {Badge, Avatar} from "@nextui-org/react";
 
 const Banner = () => {
   return (
     
-    <div className='container container-sm px-10 max-w-6xl mx-auto mt-16'>
-        <div className='columns-2 p-10'>
-            <div className='columns1 flex'>
-            <article className="font-mono text-wrap text-center">
-                    <h1
-                    className="text-5xl md:text-5xl font-bold"
-                    style={{ opacity: 1, transform: "none" }}
-                    >
-                    I'm <span style={{color: '#1d4ed8'}}>Isaías Pérez</span> 
-                    </h1>
-                    
-                    <p
-                    className="text-zinc-600 font-mono text-3xl md:textlg mt-2"
-                    >Full-Stack <span style={{color: '#1d4ed8'}}>Developer</span> 
-                    </p>
-                    <p className="text-zinc-800 font-mono text-xl md:textlg mt-3 text-justify">
-                    I am a proactive, organized, and responsible individual with stronginterpersonal skills. An enthusiasticyoung person eager to learn newtechnologies and showcase myknowledge, with a strong orientationtowards problem-solving.
-                    “'The more I learn, the more I realizehow much I don't know.'” - AE
-                    </p>
+    <div className='container container-sm px-10 max-w-6xl mx-auto mt-auto'>
+        <div className='pt-10 grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'>
+            <div className='flex flex-col'>
+                <article className="font-mono text-wrap text-center">
+                        <Badge>
+                            <Avatar
+                                isBordered
+                                src={myImage}
+                                size='lg'
+                                radius='md'
+                            />
+                        </Badge>
+                        <h1
+                        className="text-5xl md:text-5xl font-bold"
+                        style={{ opacity: 1, transform: "none" }}
+                        >
+                        I'm <span style={{color: '#1d4ed8'}}>Isaías Pérez</span> 
+                        </h1>
+                        
+                        <p
+                        className="text-zinc-600 font-mono text-3xl md:textlg mt-2"
+                        >Full-Stack <span style={{color: '#1d4ed8'}}>Developer</span> 
+                        </p>
+                        <p className="text-zinc-800 font-mono text-xl md:textlg mt-3 text-justify">
+                        I am a proactive, organized, and responsible individual with stronginterpersonal skills. An enthusiasticyoung person eager to learn newtechnologies and showcase myknowledge, with a strong orientationtowards problem-solving.
+                        “'The more I learn, the more I realizehow much I don't know.'” - AE
+                        </p>
+                        
+                    </article>
                     <div className='flex mt-5'>
                         <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download CV</button>
-                        <button type="button" className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Send me an Email</button>
-                        <div className='flex place-content-end'>
+                        <a href="mailto:ispm19@hotmail.com"><button type="button" className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Send me an Email</button>
+                        </a>
+                        <div className='flex content-center'>
                         <a href='https://www.linkedin.com/in/isaias-perez-34aa1b273/' target='_blank'>
                         <svg
                             width="40px"
@@ -82,15 +93,10 @@ const Banner = () => {
                         </a>
                         </div>
                     </div>
-                </article>
                 </div>
-            <div className='columns-1'>
-                <img className="rounded-full w-96 h-96 shadow-2xl ms-auto" 
-                src={myImage}                
-                alt="image description" />
-            </div>
+           
         </div>
-        
+        <hr />
     </div>
   )
 }
