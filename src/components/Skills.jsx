@@ -1,49 +1,42 @@
 import React from 'react'
 import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
-import htmlimg from "./descarga.png"
+
 
 const list = [{
     title: "HTML",
-    img: htmlimg
+    img: "https://icons.iconarchive.com/icons/martz90/hex/512/html-5-icon.png"
   },
   {
     title: "CSS",
-    img: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png",
-    price: "$3.00",
+    img: "https://icons.iconarchive.com/icons/martz90/hex/512/css-3-icon.png"
   },
   {
     title: "JavaScript",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-    price: "$10.00",
+    img: "https://ih0.redbubble.net/image.1766664556.6102/raf,360x360,075,t,fafafa:ca443f4786.jpg"
   },
   {
-    title: "Reactjs",
-    img: "https://solidstudio.io/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Flofvu8al%2Fproduction%2F39d6cef5649ed5c35b1420198a362baf1bff97a6-1280x939.jpg&w=1080&q=75",
-    price: "$5.30",
+    title: "ReactJs",
+    img: "https://ih1.redbubble.net/image.2517831628.1453/st,small,507x507-pad,600x600,f8f8f8.jpg"
   },
   {
     title: "TailwindCss",
-    img: "https://static-00.iconduck.com/assets.00/tailwind-css-icon-1024x615-fdeis5r1.png",
-    price: "$15.70",
+    img: "https://static-00.iconduck.com/assets.00/tailwind-css-icon-1024x615-fdeis5r1.png"
   },
   {
     title: "Bootstrap",
-    img: "https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67",
-    price: "$8.00",
+    img: "https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67"
   },
   {
     title: "Python",
-    img: "https://www.svgrepo.com/show/376344/python.svg",
-    price: "$7.50",
+    img: "https://www.svgrepo.com/show/376344/python.svg"
   },
   {
     title: "SQL",
-    img: "https://cdn-icons-png.flaticon.com/512/4299/4299956.png",
-    price: "$12.20",
+    img: "https://cdn-icons-png.flaticon.com/512/4299/4299956.png"
   },]
 const Skills = () => {
   return (
-    <div className='container container-sm px-10 max-w-4xl mx-auto mt-auto gap-10' id='skills'>
+    <div className='container container-sm px-10 max-w-4xl mx-auto mt-auto gap-10 reveal' id='skills'>
         <hr />
         <div>
             <h2 className="text-5xl font-bold text-center font-mono mb-10">

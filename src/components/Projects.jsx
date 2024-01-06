@@ -31,11 +31,9 @@ function NewTab(link1){
 const Projects = () => {
   return (
     
-        <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}  
-        id='project'     
+        <div
+        className='reveal' 
+        id='project'  
         >
         <h2 className="text-5xl font-bold text-center font-mono mb-10">My Personal Projects</h2>
             <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 container container-sm px-10 max-w-4xl mx-auto mt-auto gap-10'>
@@ -120,7 +118,7 @@ const Projects = () => {
                     </Tooltip>
                 
             </div>
-        </motion.div>
+        </div>
         
     )
 }

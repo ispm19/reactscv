@@ -11,7 +11,7 @@ const Banner = () => {
     initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }} 
-        className='container container-sm px-10 max-w-4xl mx-auto mt-auto'>
+        className='container container-sm px-10 max-w-4xl mx-auto mt-auto pt-10'>
         <div className='pt-10 grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'>
             <div className='flex flex-col'>
                 <article className="font-mono text-wrap text-center">
