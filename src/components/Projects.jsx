@@ -38,7 +38,7 @@ const Projects = () => {
         id='project'     
         >
         <h2 className="text-5xl font-bold text-center font-mono mb-10">My Personal Projects</h2>
-            <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 container container-sm px-10 max-w-6xl mx-auto mt-auto gap-10'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 container container-sm px-10 max-w-4xl mx-auto mt-auto gap-10'>
                 
                 
                     <Tooltip content="Click to open web page" delay={0}

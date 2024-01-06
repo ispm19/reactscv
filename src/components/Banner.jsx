@@ -11,18 +11,18 @@ const Banner = () => {
     initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }} 
-        className='container container-sm px-10 max-w-6xl mx-auto mt-auto'>
+        className='container container-sm px-10 max-w-4xl mx-auto mt-auto'>
         <div className='pt-10 grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'>
             <div className='flex flex-col'>
                 <article className="font-mono text-wrap text-center">
-                        <Badge>
+                        <div className='flex justify-center mb-5'>
                             <Avatar
                                 isBordered
                                 src={myImage}
                                 size='lg'
                                 radius='md'
                             />
-                        </Badge>
+                        </div>
                         <h1
                         className="text-5xl md:text-5xl font-bold"
                         style={{ opacity: 1, transform: "none" }}
@@ -71,7 +71,8 @@ const Banner = () => {
                         </motion.a>
                         <motion.a 
                         whileHover={{scale: 1.4,
-                            rotate: [0, 360]
+                            rotate: [0, 360],
+                            
                         }}
                         href='https://github.com/ispm19' target='_blank'>
                         <svg

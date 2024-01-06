@@ -121,8 +121,13 @@ const Nav = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#skills">
             Skills
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Contact
           </Link>
         </NavbarItem>
       </NavbarContent>
