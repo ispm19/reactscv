@@ -32,7 +32,7 @@ const list = [{
   },
   {
     title: "SQL",
-    img: "https://cdn-icons-png.flaticon.com/512/4299/4299956.png"
+    img: "https://cdn3.vectorstock.com/i/1000x1000/54/87/sql-database-server-isolated-flat-web-mobile-icon-vector-28995487.jpg"
   },]
 const Skills = () => {
   return (

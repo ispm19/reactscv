@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 
 const Nav = () => {
   return (
     
         <Navbar shouldHideOnScroll maxWidth={'full'} height={'5rem'} isBordered={true}>
+          
       <NavbarBrand>
       <a
             href="#"
@@ -112,7 +113,7 @@ const Nav = () => {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link href="#about">
-            About
+            
           </Link>
         </NavbarItem>
         <NavbarItem>
