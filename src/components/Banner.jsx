@@ -32,7 +32,7 @@ const Banner = () => {
                         
                         <p
                         className="text-zinc-600 font-mono text-3xl md:textlg mt-2"
-                        >Front-End Developer <span style={{color: '#1d4ed8'}}>Developer</span> 
+                        >Front-End <span style={{color: '#1d4ed8'}}>Developer</span> 
                         </p>
                         <p className="text-zinc-800 font-mono text-xl md:textlg mt-3 text-justify">
                         I am a proactive, organized, and responsible individual with stronginterpersonal skills. An enthusiasticyoung person eager to learn newtechnologies and showcase myknowledge, with a strong orientationtowards problem-solving.

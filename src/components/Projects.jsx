@@ -28,6 +28,12 @@ import { motion, useAnimation } from "framer-motion";
     tecnologias: "Reactjs",
     link:'https://reactscv.vercel.app/',
     src: cv1
+ },{
+    name: "Billing System",
+    tecnologias: "JavaScript / ASP.NET",
+    link: "https://github.com/ispm19/Facturacion-project",
+    src: pythonpng
+    
  }
 ];
 
