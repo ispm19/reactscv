@@ -6,7 +6,6 @@ import pythonpng from "./led.png"
 import cv1 from "./cv1.png"
 import './Projects.css';
 import {Tooltip} from "@nextui-org/react";
-import { motion, useAnimation } from "framer-motion";
 
  const proje = [{
     name : "Simple Calculator",
@@ -33,7 +32,7 @@ import { motion, useAnimation } from "framer-motion";
     tecnologias: "JavaScript / ASP.NET",
     link: "https://github.com/ispm19/Facturacion-project",
     src: pythonpng
-    
+
  }
 ];
 

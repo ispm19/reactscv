@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import React from 'react';
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
+
+
 
 const Nav = () => {
   return (
@@ -7,10 +9,7 @@ const Nav = () => {
         <Navbar shouldHideOnScroll maxWidth={'full'} height={'5rem'} isBordered={true}>
           
       <NavbarBrand>
-      <a
-            href="#"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          > 
+      <a href="#logo" className="flex items-center space-x-3 rtl:space-x-reverse"> 
             <svg
   version="1.1"
   id="Layer_1"

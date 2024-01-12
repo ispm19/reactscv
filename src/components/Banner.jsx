@@ -1,8 +1,7 @@
 import React from 'react'
 import myImage from './me.jpeg';
-import {Badge, Avatar} from "@nextui-org/react";
-import { motion, useAnimation } from "framer-motion";
-
+import {Avatar} from "@nextui-org/react";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
@@ -41,7 +40,7 @@ const Banner = () => {
                         
                     </article>
                     <div className='flex mt-5'>
-                        <a href='C:\Users\ispm1\reacts\src\components\cv_english.pdf' download={"IsaiasCV.pdf"}>
+                        <a href='C:\Users\ispm1\reacts\src\components\cv_english.pdf' download={''}>
                         <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download CV</button>
                         </a>
                         <a href="mailto:ispm19@hotmail.com"><button type="button" className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Send me an Email</button>
@@ -51,7 +50,7 @@ const Banner = () => {
                         whileHover={{scale: 1.4,
                             rotate: [0, 360]
                         }}
-                        href='https://www.linkedin.com/in/isaias-perez-34aa1b273/' target='_blank'>
+                        href='www.linkedin.com/in/isaías-pérez-34aa1b273' target='_blank'>
                         <svg
                             width="40px"
                             height="40px"
