@@ -23,11 +23,7 @@ import {Tooltip} from "@nextui-org/react";
     link: 'https://github.com/ispm19/PDFMP3Py',
     src: pythonpng
  },{
-    name : "Mi CV",
-    tecnologias: "Reactjs",
-    link:'https://reactscv.vercel.app/',
-    src: cv1
- },{
+    
     name: "Billing System",
     tecnologias: "JavaScript / ASP.NET",
     link: "https://github.com/ispm19/Facturacion-project",
